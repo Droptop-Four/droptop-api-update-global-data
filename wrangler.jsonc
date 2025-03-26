@@ -6,7 +6,7 @@
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "droptop-api-update-global-data",
 	"main": "src/index.js",
-	"compatibility_date": "2025-03-19",
+	"compatibility_date": "2025-03-17",
 	"observability": {
 		"enabled": true
 	},
