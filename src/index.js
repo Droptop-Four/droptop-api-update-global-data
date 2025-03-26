@@ -21,7 +21,7 @@ async function realmLogin(appId, apiKey) {
 async function updateApps(token, collection, url) {
 	const path = 'data/community_apps/community_apps.json';
 
-	let completeUrl = `${url}${path}?ref=tests`;
+	let completeUrl = `${url}${path}`;
 
 	let response = await fetch(completeUrl, {
 		method: 'GET',
@@ -60,7 +60,6 @@ async function updateApps(token, collection, url) {
 			message: 'Updated apps from db',
 			content: updatedContentEncoded,
 			sha: fileData.sha,
-			branch: 'tests',
 		}),
 	});
 
@@ -72,7 +71,7 @@ async function updateApps(token, collection, url) {
 async function updateThemes(token, collection, url) {
 	const path = 'data/community_themes/community_themes.json';
 
-	let completeUrl = `${url}${path}?ref=tests`;
+	let completeUrl = `${url}${path}`;
 
 	let response = await fetch(completeUrl, {
 		method: 'GET',
@@ -111,7 +110,6 @@ async function updateThemes(token, collection, url) {
 			message: 'Updated themes from db',
 			content: updatedContentEncoded,
 			sha: fileData.sha,
-			branch: 'tests',
 		}),
 	});
 
