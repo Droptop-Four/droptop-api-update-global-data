@@ -1,23 +1,31 @@
 {
 	"name": "droptop-api-update-global-data",
-	"version": "0.0.0",
+	"version": "1.0.0",
+	"author": "Bunz <66bunz@gmail.com> (https://droptopfour.com)",
+	"description": "This is a Cloudflare Worker for updating global data files hosted on Github from the Droptop Four API.",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Droptop-Four/droptop-api-update-global-data.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Droptop-Four/droptop-api-update-global-data/issues"
+	},
+	"license": "GPL-3.0",
 	"private": true,
+	"type": "module",
+	"main": "index.js",
 	"scripts": {
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev --test-scheduled",
-		"start": "wrangler dev --test-scheduled",
-		"test": "vitest"
+		"start": "wrangler dev --test-scheduled"
 	},
 	"devDependencies": {
-		"@cloudflare/vitest-pool-workers": "^0.7.5",
-		"vitest": "~3.0.7",
-		"wrangler": "^4.2.0"
+		"wrangler": "^4.80.0"
 	},
 	"dependencies": {
 		"@tsndr/cloudflare-worker-jwt": "^3.1.4",
 		"base-64": "^1.0.0",
 		"json-bigint": "^1.0.0",
-		"realm-web": "^2.0.1",
 		"toucan-js": "^4.1.1"
 	}
 }
