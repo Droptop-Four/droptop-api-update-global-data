@@ -1,6 +1,6 @@
 {
 	"name": "droptop-api-update-global-data",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "Bunz <66bunz@gmail.com> (https://droptopfour.com)",
 	"description": "This is a Cloudflare Worker for updating global data files hosted on Github from the Droptop Four API.",
 	"repository": {
@@ -20,7 +20,7 @@
 		"start": "wrangler dev --test-scheduled"
 	},
 	"devDependencies": {
-		"wrangler": "^4.80.0"
+		"wrangler": "^4.103.0"
 	},
 	"dependencies": {
 		"@tsndr/cloudflare-worker-jwt": "^3.1.4",
